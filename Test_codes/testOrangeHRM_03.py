@@ -6,7 +6,7 @@ from Test_Data.data import Orange_Data
 from Test_Locators.locators import Orange_Locators
 import pytest
 
-class Test_OrangeHRM_1:
+class Test_OrangeHRM:
 
     #Booting method for running the Pytest test cases
     @pytest.fixture
@@ -78,4 +78,4 @@ class Test_OrangeHRM_1:
         # Click on the "reconfirm_delete" button 
         self.driver.find_element(by=By.XPATH, value=Orange_Locators.reconfirm_delete_button).click()
         assert self.driver.title =='OrangeHRM'
-        print("successfully employee deleted")      
+        print("successfully employee deleted")       
